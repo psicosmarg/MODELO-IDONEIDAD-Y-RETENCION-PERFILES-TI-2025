@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------------------
+# GITIGNORE MAESTRO PARA PROYECTOS DE CIENCIA DE DATOS (VERSIÓN 1.0)
+# ---------------------------------------------------------------------------
+
+# 1. ARCHIVOS DE SISTEMA Y CACHÉ DE R / RSTUDIO
+# Ignora archivos temporales y de configuración del entorno local.
+.Rproj.user/
+.Rhistory
+.RData
+.RDataTmp
+.Renviron
+.Ruserdata/
+
+# 2. CÓDIGO FUENTE Y PROPIEDAD INTELECTUAL (LA "BÓVEDA")
+# La regla más importante: NUNCA subir el código fuente.
+*.R
+*.Rmd
+*.py
+app.R
+
+# 3. DATOS CRUDOS Y PROCESADOS
+# NUNCA subir datos al repositorio público.
+*.csv
+*.xlsx
+*.xls
+*.json
+*.sav
+*.rda
+*.RData
+
+# 4. CARPETAS PRIVADAS COMUNES
+# Ignora carpetas enteras que contienen trabajo interno.
+data/
+visualizaciones/
+scripts/
+private/
+RDataImp/
+sensitive/
+
+# 5. ENTREGABLES INTERNOS Y DOCUMENTOS
+# Ignora reportes, resúmenes y presentaciones que no sean el HTML final.
+*.docx
+*.pdf
+*.pptx
+*.txt
+
+# 6. ARCHIVOS DE PROYECTO Y PAQUETES
+# Ignora archivos de configuración del proyecto y librerías.
+*.Rproj
+renv/
+rsconnect/
